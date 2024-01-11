@@ -7,8 +7,8 @@ function App() {
     <>
       <Background />
       <Asteroid scale={AsteroidScale.small} />
-      {/* <Asteroid scale={AsteroidScale.medium} />
-      <Asteroid scale={AsteroidScale.large} />
+      <Asteroid x={300} y={0} scale={AsteroidScale.medium} />
+      {/*<Asteroid scale={AsteroidScale.large} />
       <Asteroid scale={AsteroidScale.xLarge} /> */}
     </>
   );
