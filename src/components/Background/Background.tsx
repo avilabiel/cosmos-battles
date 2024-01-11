@@ -1,10 +1,9 @@
-import { ReactNode } from "react";
 import "./Background.css";
 
-const Background = ({ children }: { children: ReactNode }) => {
+const Background = () => {
   return (
     <>
-      <div className="background-universe">{children}</div>
+      <div className="background-universe"></div>
     </>
   );
 };
