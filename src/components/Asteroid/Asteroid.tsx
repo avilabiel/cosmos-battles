@@ -1,11 +1,5 @@
 import asteroidImg from "../../assets/asteroid.png";
-
-enum AsteroidScale {
-  small = 100,
-  medium = 300,
-  large = 400,
-  xLarge = 500,
-}
+import { AsteroidScale } from "../../types/asteroid";
 
 const Asteroid = ({
   scale = AsteroidScale.medium,
@@ -13,10 +7,9 @@ const Asteroid = ({
   scale?: AsteroidScale;
 }) => {
   return (
-    <div className="asteroid">
-      <div className="asteroid__body"></div>
+    <>
       <img src={asteroidImg} width={scale} />
-    </div>
+    </>
   );
 };
 
